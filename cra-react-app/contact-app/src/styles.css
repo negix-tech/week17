@@ -1,0 +1,199 @@
+/* تنظیمات کلی */
+body {
+  font-family: 'Vazir', sans-serif;
+  direction: rtl;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* هدر */
+.header {
+  background-color: #0077cc;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* صفحه‌ها */
+.page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* فرم افزودن و ویرایش مخاطب */
+.form input {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form button {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #005fa3;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: -0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* جستجو و پیام موفقیت */
+.search {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 0.7rem;
+  border: 1px solid #c3e6cb;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* جدول مخاطبین */
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.contact-table th,
+.contact-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  text-align: right;
+}
+
+.contact-table th {
+  background-color: #f0f4f8;
+  font-weight: bold;
+}
+
+.contact-table tr:hover {
+  background-color: #f9fbfc;
+}
+
+/* منوی سه‌نقطه‌ای داخل ردیف */
+.menu-inline {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-inline button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.menu-inline .menu {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 100;
+  min-width: 120px;
+}
+
+.menu-inline .menu button {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  background: none;
+  border: none;
+  text-align: right;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.menu-inline .menu button:hover {
+  background-color: #f0f0f0;
+}
+
+/* مدال تأیید عملیات */
+.modal {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  z-index: 200;
+  text-align: center;
+}
+
+.modal p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.modal button {
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal button:first-of-type {
+  background-color: #d9534f;
+  color: white;
+}
+
+.modal button:last-of-type {
+  background-color: #6c757d;
+  color: white;
+}
